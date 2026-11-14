@@ -22,3 +22,13 @@ android/capacitor-cordova-android-plugins/build/
 npm-debug.log*
 .idea/
 .vscode/
+.env.production
+.env.development
+!*.env.example
+__pycache__/
+*.pyc
+.venv/
+.pio/
+android/local.properties
+android/app/src/main/assets/public/
+android/app/src/main/assets/capacitor.config.json
