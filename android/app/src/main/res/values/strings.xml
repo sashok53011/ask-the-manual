@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Ask the Manual</string>
+    <string name="title_activity_main">Ask the Manual</string>
+    <string name="package_name">com.devhorizon.askthemanual</string>
+    <string name="custom_url_scheme">com.devhorizon.askthemanual</string>
+</resources>

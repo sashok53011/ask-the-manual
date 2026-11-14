@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Remix Ask the Manual</title>
+    <meta name="description" content="Explore the power of FileSearch, the simplest integrated RAG solution. Just upload any text file, from product manuals to dense reports, and ask away. FileSearch takes care of the rest, instantly digging through the content to find the precise answers you need." />
+    <meta property="og:title" content="Remix Ask the Manual" />
+    <meta property="og:description" content="Explore the power of FileSearch, the simplest integrated RAG solution. Just upload any text file, from product manuals to dense reports, and ask away. FileSearch takes care of the rest, instantly digging through the content to find the precise answers you need." />
+    <!-- Google Fonts: Inter, JetBrains Mono, Fira Code, Outfit, Merriweather, Orbitron, Caveat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Orbitron:wght@500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- KaTeX CSS for LaTeX and math symbol rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'gem-onyx': '#f8fafc',
+              'gem-slate': '#ffffff',
+              'gem-mist': '#e2e8f0',
+              'gem-offwhite': '#1e293b',
+              'gem-teal': '#0d9488',
+              'gem-blue': '#2563eb'
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              mono: ['"JetBrains Mono"', '"Fira Code"', 'monospace'],
+              fira: ['"Fira Code"', 'monospace'],
+              outfit: ['Outfit', 'sans-serif'],
+              serif: ['Merriweather', 'serif'],
+              orbitron: ['Orbitron', 'sans-serif'],
+              handwriting: ['Caveat', 'cursive'],
+            },
+            keyframes: {
+              'progress-stripes': {
+                'from': { backgroundPosition: '1rem 0' },
+                'to': { backgroundPosition: '0 0' }
+              },
+              'rainbow-flow': {
+                '0%, 100%': { backgroundPosition: '0% 50%' },
+                '50%': { backgroundPosition: '100% 50%' },
+              }
+            },
+            animation: {
+              'progress-stripes': 'progress-stripes 1s linear infinite',
+              'rainbow-flow': 'rainbow-flow 6s ease infinite',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+  <body class="bg-gem-onyx text-gem-offwhite transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  <style>.portal-nav-btn{position:fixed;bottom:16px;left:16px;z-index:99999;padding:8px 14px;border-radius:999px;background:rgba(16,19,30,0.85);border:1px solid #2A3048;color:#F1F5F9;font-size:12px;font-family:system-ui,sans-serif;cursor:pointer;backdrop-filter:blur(8px);box-shadow:0 4px 12px rgba(0,0,0,0.4);} .portal-nav-btn:hover{border-color:#FF007F;} html{-webkit-text-size-adjust:100%;} body{-webkit-tap-highlight-color:transparent;overscroll-behavior-y:none;} @media (max-width:640px){.portal-nav-btn{bottom:calc(12px + env(safe-area-inset-bottom));left:12px;font-size:11px;padding:7px 12px;}}</style><button class="portal-nav-btn" onclick="window.location.href='/'">&#8592; Portal</button><script>(function(){try{var c={};try{c=JSON.parse(localStorage.getItem('shared_ai_config')||'{}')||{};}catch(e){c={};}if(!c.baseUrl){c.baseUrl='https://ai.devhorizon.online';}var s=JSON.stringify(c);localStorage.setItem('shared_ai_config',s);localStorage.setItem('openai_provider_config',s);}catch(e){}})();</script></body>
+</html>
